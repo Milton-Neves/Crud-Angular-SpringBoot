@@ -1,0 +1,21 @@
+
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-12">
+        <p-table [value]="estados">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Id</th>
+                    <th>Sigla</th>
+                    <th>Nome</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-estado>
+                <tr>
+                    <td>{{estado.id}}</td>
+                    <td>{{estado.sigla}}</td>
+                    <td>{{estado.nome}}</td>
+                    </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>
